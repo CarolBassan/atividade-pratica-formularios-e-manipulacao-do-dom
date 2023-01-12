@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+}
+
+.frame{
+    width: 500px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+}
+
+.area{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.botao{
+    margin-left: 20px;
+}
+
+#limpar{
+    margin-right: 5px;
+}
+
+#estado{
+    margin-bottom: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+

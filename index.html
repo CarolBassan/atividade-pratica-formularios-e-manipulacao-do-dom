@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form>
+        <fieldset class="frame">
+            <legend>Dados Pessoais</legend>
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input required name="nome" type="text" id="nome">
+                <br>
+                <label for="endereco">Endereço:</label>
+                <input  required name="endereco" type="text" id="endereco">
+                <br>
+                <label for="cidade">Cidade:</label>
+                <input  required name="cidade" type="text" id="cidade">
+                <br>
+                <label for="Estado">Estado:</label>
+                <select required name="estado" id="estado">
+                    <option value="RS">Rio grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="frame">
+            <legend>Dados Profissionais</legend>
+
+            <div>
+                Natureza do Cargo <br>
+
+                <input 
+                    id="gerencia"
+                    name="cargo"
+                    type="radio"
+                    value="gerencia"
+                    checked 
+                />
+                <label for="gerencia">Gerência</label>
+
+                <input 
+                    id="financeiro" 
+                    name="cargo" 
+                    type="radio" 
+                    value="financeiro" 
+                />
+                <label for="financeiro">Financeiro</label>
+
+                <input 
+                    id="recepcao" 
+                    name="cargo" 
+                    type="radio" 
+                    value="recepcao" 
+                />
+                <label for="recepcao">Recepção</label>
+
+                <input 
+                    id="administrativo" 
+                    name="cargo" 
+                    type="radio" 
+                    value="administrativo" 
+                />
+                <label for="administrativo">Administrativo</label>
+
+                <input 
+                    id="juridico" 
+                    name="cargo" 
+                    type="radio" 
+                    value="juridico" 
+                />
+                <label for="juridico">Jurídico</label>
+            </div>
+            <br>
+            <div>
+                Área de Interesse <br>
+
+                <input
+                    id="computacao"
+                    name="interesses"
+                    type="checkbox"
+                    value="computacao"
+                />
+                <label for="computacao">Computação</label>
+
+                <input
+                    id="biologia"
+                    name="interesses"
+                    type="checkbox"
+                    value="biologia"
+                />
+                <label for="biologia">Biologia</label>
+
+                <input
+                    id="meio-ambiente"
+                    name="interesses"
+                    type="checkbox"
+                    value="meio-ambiente"
+                />
+                <label for="meio-ambiente">Meio Ambiente</label>
+
+                <input
+                    id="engenharia"
+                    name="interesses"
+                    type="checkbox"
+                    value="engenharia"
+                />
+                <label for="engenharia">Engenharia</label>
+
+                <input
+                    id="historia"
+                    name="interesses"
+                    type="checkbox"
+                    value="historia"
+                />
+                <label for="historia">História</label>
+            </div>
+            <br>
+            <div class="area">
+                <label for="curriculo">Mini-currículo</label>
+                <textarea
+                    name="curriculo"
+                    id="curriculo"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+            </div>
+        </fieldset>
+
+        <div class="botao">
+            <br>
+            <input type="submit" id="salvar" value="Enviar">
+            <input type="reset"  id="limpar" value="Limpar">
+        </div>
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+</html>
